@@ -1,0 +1,68 @@
+# ---------------- APP BASIC INFO ----------------
+name: employee_protal
+description: "WorkTrack Employee Management App"
+publish_to: 'none'   # prevents accidental publishing to pub.dev
+
+# Version shown on Play Store / device
+version: 1.0.0+1
+
+# ---------------- DART SDK ----------------
+environment:
+  sdk: ^3.10.1
+
+# ---------------- MAIN DEPENDENCIES ----------------
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # iOS style icons
+  cupertino_icons: ^1.0.8
+
+  # Local storage (auto login etc.)
+  shared_preferences: ^2.5.4
+
+  # API calls (if needed)
+  http: ^1.6.0
+
+  # Location services
+  geolocator: ^14.0.2
+
+  # Pick image from gallery/camera
+  image_picker: ^1.0.7
+
+  # Handle permissions
+  permission_handler: ^11.3.1
+
+  # Firebase core setup
+  firebase_core: ^4.4.0
+
+  # Firebase authentication
+  firebase_auth: ^6.1.4
+
+  # Firestore database
+  cloud_firestore: ^6.1.2
+
+# ---------------- DEV DEPENDENCIES ----------------
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Lint rules
+  flutter_lints: ^6.0.0
+
+  # Auto generate app launcher icon
+  flutter_launcher_icons: ^0.14.4
+
+# ---------------- FLUTTER CONFIG ----------------
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icon.png
+
+# ---------------- APP ICON CONFIG ----------------
+# IMPORTANT: This MUST be outside flutter:
+flutter_launcher_icons:
+  android: true        # generate Android icon
+  ios: false           # iOS disabled for now
+  image_path: "assets/icon.png"   # path to your icon file
